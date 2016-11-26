@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by anwar1987 (http://jsbin.com/kuboxu/52/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>Communist Mutants from the Space</title>
+<style id="jsbin-css">
+#oldal{
+  height:1800.03px;
+  width:1100px;
+  background-color:#f6f6f6;
+}
+#sor0{
+  height:2.2%;
+  width:100%;
+  margin-top:5px;
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(#FFFFFF,#F6F6F6 );
+  background: -o-linear-gradient(#FFFFFF,#F6F6F6 );
+  background: -o-linear-gradient(#FFFFFF,#F6F6F6 );
+  background: -moz-linear-gradient(#FFFFFF, #F6F6F6);
+  background: linear-gradient(#FFFFFF ,#F6F6F6);
+}
+.szurke{
+ color:gray;
+}
+.jobb{
+  float:right;
+}
+.bal{
+  float:left;
+}
+.betu1{
+  font-size:12px;
+}
+a{
+  color:#0646B8;
+}
+hr{
+   color:#aaa;
+}
+#Bejelentkezes{
+  margin-right:7px;
+}
+#szokoz{
+  width:10px;
+  height:1px;
+  float:right;
+}
+#bejelentkezes{
+	font-size: 1em;
+	background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2212px%22%20height%3D%2213.836px%22%20viewBox%3D%220%200%2012%2013.836%22%20enable-background%3D%22new%200%200%2012%2013.836%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20fill%3D%22%23777777%22%20d%3D%22M1.938%2C6.656c-1.32%2C1.485-1.47%2C3.15-0.97%2C4.25c0.323%2C0.707%2C0.78%2C1.127%2C1.313%2C1.375%0A%09c0.496%2C0.229%2C1.074%2C0.273%2C1.658%2C0.282c0.023%2C0%2C0.04%2C0.03%2C0.062%2C0.03h4.187c0.61%2C0%2C1.225-0.125%2C1.75-0.405%0A%09c0.527-0.28%2C0.961-0.718%2C1.188-1.376c0.335-0.964%2C0.175-2.529-1.094-4.03C9.094%2C7.954%2C7.68%2C8.719%2C6.065%2C8.719%0A%09c-1.677%2C0-3.182-0.812-4.125-2.063H1.938z%22%2F%3E%0A%3Cpath%20fill%3D%22%23777777%22%20d%3D%22M6.063%2C0c-1.89%2C0-3.595%2C1.674-3.594%2C3.563C2.467%2C5.45%2C4.173%2C7.155%2C6.06%2C7.155%0A%09c1.89%2C0%2C3.564-1.705%2C3.563-3.593C9.625%2C1.673%2C7.95%2C0%2C6.063%2C0L6.063%2C0z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+	padding-left:13px;
+  background-repeat:no-repeat;
+  margin-left:753px;
+  
+}
+#wiki-logo{
+  margin-top:-160px;
+  margin-left:30px;
+}
+#sor1{
+  height:30px;
+  position:relative;
+  background-color:#F6F6F6;
+  width:897px;
+  float:right;
+}
+input{
+  border-radius:0px;
+  background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2213%22%3E%3Cg%20stroke-width%3D%222%22%20stroke%3D%22%236c6c6c%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M11.29%2011.71l-4-4%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%225%22%20r%3D%224%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+background-repeat:no-repeat;
+background-position: right; 
+}
+.gomb1{
+  color:black;
+  border-width: 2px 1px; border-style: solid; -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#a7d7f9)) 4 100%; -webkit-border-image: -webkit-linear-gradient(white, #a7d7f9) 4 100%; -moz-border-image: -moz-linear-gradient(white, #a7d7f9) 4 100%; -o-border-image: -o-linear-gradient(white, rgba(167, 215, 249, 1)) 4 100%; border-image: linear-gradient(to bottom, white, #a7d7f9) 4 100%;
+ padding: 5px 10px;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 0.85em;
+ background-color:white;
+ border-bottom:3px white solid;
+}
+.gomb2{
+   border-width: 3px 1px 1px; border-style: solid; -webkit-border-image: -webkit-gradient( from(white), to(#a7d7f9)) 4; -webkit-border-image: -webkit-linear-gradient(white, #a7d7f9) 4; -moz-border-image: -moz-linear-gradient(white, #a7d7f9) 4; -o-border-image: -o-linear-gradient(white, #a7d7f9) 4; border-image: linear-gradient(to bottom, white, #a7d7f9) 4;
+   padding: 5px 10px;
+   text-decoration: none;
+   display: inline-block;
+  font-size: 0.85em;
+  background-color:white;
+  background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #a7d7f9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #a7d7f9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #a7d7f9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #e8f2f8); /* Standard syntax */
+  border-bottom:none;
+}
+a{
+  text-decoration: none;
+}
+#sor1-szoveg{
+  margin-top:10px;
+}
+#sor2{
+  height:100%;
+  width:100%;
+}
+#feher-lap{
+  height:87.5%;
+  width:897px;
+  background-color:white;
+  border:1px solid #a7d7f9;
+  border-right:none;
+  margin-top:-px;
+}
+#fuggoleges-elvalaszto{
+  width:1px;
+  height:90%;
+  background-color:#a7d7f9;
+}
+#kommunista-mutansok{
+  font-family:"Linux Libertine",Georgia,Times,serif;
+  font-size:1.8em;
+  font-weight:normal;
+}
+#vizszintes-vonal1{
+  background-color:#aaa;
+  height:1px;
+  width:100%;
+  margin-top:-20px;
+}
+#keret{
+  height:98.6%;
+  margin-left:35px;
+  margin-right:35px;
+}
+#wikia{
+  margin-top:5px;
+}
+#kep1{
+  height:502px;
+  width:264px;
+  float:right;
+  background-color:#F9F9F9;
+  border: 1px solid #aaa;
+  margin:12.6px;
+  margin-top:-0.5px;
+}
+#kis-vonal{
+  height:1px;
+  width:540px;
+  background-color:#aaa;
+  margin-top:1px;
+}
+#tablazat{
+  text-align:left;
+  height:200px;
+  width:180px;
+  border: 1px solid #aaa;
+  background-color:#F9F9F9;
+  margin:15px;
+  margin-left:-0.5px;
+  padding:-10px;
+}
+#kep2{
+height:230px;
+width:195px;
+border: 1px solid #aaa;
+padding:2px;
+background-color: #F9F9F9;
+margin:16px;
+margin-top:2px;
+}
+#tablazat2{
+  height:60px;
+  width:px;
+  margin-top:1px;
+  border:1px solid #aaa;
+  background-color:#F9F9F9;
+}
+.vonal{
+  height:1.2px;
+  width:144px;
+  margin-top:3px;
+  margin-left:-20px;
+  background: #ffffff;
+  background: -webkit-linear-gradient(#eaeaea, #dedede , #eaeaea);
+  background: -o-linear-gradient(#eaeaea, #dedede, #eaeaea);
+  background: -o-linear-gradient(#eaeaea, #dedede, #eaeaea);
+  background: -moz-linear-gradient(#eaeaea, #dedede, #eaeaea);
+  background: linear-gradient(#eaeaea , #dedede , #eaeaea);
+}
+.rovid-vonal{
+  background: #ffffff;
+  background: -webkit-linear-gradient(#ffffff, #f6f6f6 , #ffffff);
+  background: -o-linear-gradient(#ffffff, #f6f6f6 , #ffffff);
+  background: -o-linear-gradient(#ffffff, #f6f6f6 , #ffffff);
+  background: -moz-linear-gradient(#ffffff, #f6f6f6 , #ffffff);
+  background: linear-gradient(#ffffff, #f6f6f6 , #ffffff);
+  width:150px;
+  margin-left:-15px;
+}
+#letolo{
+  height:120px;
+}
+#also-szoveg{
+  font-size:0.7em;
+  height:100px;
+  margin-top: -230px;
+  margin-left:220px;
+}
+</style>
+</head>
+<body>
+<div id="oldal">
+  <div id="sor0">
+    <a href="#" class="jobb betu1" id="Bejelentkezes">Log in</a>
+    <div id="szokoz"></div>
+    <a href="#" class="jobb betu1">Create account</a> 
+    <div id="szokoz"></div>
+    <a href="#" class="jobb betu1">Contributions</a>
+    <div id="szokoz"></div>
+    <a href="#" class="jobb betu1">Talk</a>
+    <div id="szokoz"></div>
+    <div id="szurke" class="szurke jobb betu1" >Not logged in</div>
+    <div id="szokoz"></div>
+    <span id="bejelentkezes" class="job"></span>
+      </div>
+  <div id="sor1"><input autocomplete="off" tabindex="1" name="search" placeholder="Search" title="Search Wikipedia [Alt+Shift+f]" accesskey="f" id="searchInput" type="search" class="jobb"></input>
+  <div id="szokoz"></div>
+  <a href="#" class="jobb gomb2">View history</a>
+  <a href="#" class="jobb gomb2">Edit</a>  
+  <a href="#" class="jobb gomb1">Read</a>
+  <a href="#" class="bal gomb1">Article</a>
+  <a href="#" class="bal gomb2">Talk</a>  
+  </div>
+  <div id="sor2">
+    <div id="feher-lap" class="jobb">
+      <div id="keret">
+<h1 id="kommunista-mutansok"><i>Communist Mutants from Space</i></h1>
+  <hr>
+     <div id="wikia" style="font-size:80%;"> From Wikipedia, the free encyclopedia</div><br>
+      <div id="kep1" style="text-align:center;font-size:125%;font-size:90%;font-style:italic;"><b>Communist Mutants from <br>Space</br></b><p>
+        <br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Communist_Mutants_from_Space_cover.jpg/220px-Communist_Mutants_from_Space_cover.jpg" style="margin-top:-10px;"><div style="font-size:95%; margin-top:-20px; font-style: normal;"><br>Cover art</div>
+ <table style="text-align:left; font-family:sans-serif; font-style:normal;">
+<tr>
+<th><a href="#">Developer(s)</a></th> 
+  <th><a href="#">Starpath</a></th>
+ </tr>
+<tr>
+<th><a href="#">Platform(s)</a></th> 	
+<th><a href="#">Atari 2600</a></th>
+</tr>
+<tr>
+<th>Release date(s)</th> <th><a href="#">NA</a>: 1982</th>
+</tr>
+<tr>
+<th><a href="#">Genre(s)</th> <th><a href="#">Fixed shooter</a></th>
+</tr>
+<tr>
+<th>Mode(s)</th><th><a href="#">Single-player</a></th>
+</tr>
+ </table>
+      </div>
+      Communist Mutants from Space is a <a href="#">fixed shooter</a> video game created in <a href="#">1982</a> by <a href="#">Starpath</a> (formerly known as Arcadia) for the <a href="#">Atari 2600 </a> home video game console and the <a href="#">Starpath Supercharger</a> cassette accessory.<a href="#">[1]</a>
+ <div id="tablazat">
+ <ul stley="padding:-10px;">
+ <b>Contents</b> 
+   [<a href="#">hide</a>]
+   <br>
+   <br>
+ <a href="#"><span style="color:black;">1</span> Story</a><br>
+ <a href="#"><span style="color:black;">2</span> Gameplay</a><br>
+ &nbsp&nbsp&nbsp<a href="#"><span style="color:black;">2.1</span> Game menu</a>
+<br>
+ <a href="#"><span style="color:black;">3</span> Easter egg</a>
+   <br>
+ <a href="#"><span style="color:black;">4</span> References</a>
+   <br>
+ <a href="#"><span style="color:black;">5</span> External links</a>
+ </ul>
+  </div>
+      <h1 style="font-size:125%; ">Story&nbsp <span style="font-size:12px;">[</span>&nbsp<a href="#" style="font-size:12px;">edit</a>&nbsp<span style="font-size:12px;">]</span></h1> 
+      <hr>
+Aliens from the <a href="#">communist</a> planet of Rooskee are invading peaceful, democratic planets and turning their inhabitants into "Communist Mutants." The communist mutant armies are controlled by the Mother Creature, a strange alien who has gone mad due to irradiated <a href="#">vodka.</a>
+      <br>
+      <h1 style="font-size:125%;">Gameplay&nbsp <span style="font-size:12px;">[</span>&nbsp<a href="#" style="font-size:12px;">edit</a>&nbsp<span style="font-size:12px;">]</span></h1>
+      <hr>
+      <br>
+      <div><div id="kep2" style="float:left;"><center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Commiemutants.png/180px-Commiemutants.png"></center>The player must destroy the Mother Creature without being destroyed by the mutants and their bombs.</div>
+      The player starts off with three reserve cannons. The object is to destroy the mutants aliens and, most importantly, the Mother Creature. The mutants hatch from moving eggs at the top of the screen. Because the Mother Creature replenishes eggs when they hatch or are destroyed, it must be defeated before the player can advance to the next wave. If a mutant or a bomb thrown by a mutant comes into contact with the cannon, the cannon will be destroyed and a reserve must be called up. A new cannon is awarded on every other wave.</div>
+<h3 >Game menu&nbsp <span style="font-size:12px;">[</span>&nbsp<a href="#" style="font-size:12px;">edit</a>&nbsp<span style="font-size:12px;">]</span></h3>
+  The menu allows a variety of gameplay changes; for example, the player may toggle the shield option on or off. If activated, "shield" mode allowed a player to press down on the joystick to become invincible for a short period (only one shield was allotted per level). Another feature was the "time warp," which allowed the player to press up on the joystick to temporarily slow down the passage of time for his opponents (i.e., they move slower than usual). Additionally, the type of shot fired could be changed by activating the "penetrating fire" option (which enhanced the beam fired so that it could withstand hitting two mutants rather than a single one) and/or the "guided fire" option (which caused the beam to be moved with the joystick rather than firing in a straight line).
+      <br>
+      <br>
+The menu also allowed for multiple players (up to four) to be entered into the game. Players one and three shared the first joystick while players two and four shared the second.
+      <br>
+     <h3>Easter egg&nbsp <span style="font-size:12px;">[</span>&nbsp<a href="#" style="font-size:12px;">edit</a>&nbsp<span style="font-size:12px;">]</span></h3>
+     <hr>
+      <br>
+    Steven H. Landrum, the project's programmer, hid an <a href="#">easter egg</a> in the game in which holding fire during power-on of the Atari 2600 would cause the "HI" on the high scores screen to change to "SHL." <a href="#">[2]</a>
+      <h3>References&nbsp <span style="font-size:12px;">[</span>&nbsp<a href="#" style="font-size:12px;">edit</a>&nbsp<span style="font-size:12px;">]</span></h3>
+       <hr>
+      <ul>
+<li>I break for Arcadians:Entertainment abounds in a gaggle of games, Page 26, InfoWorld, 27 Jun 1983,</li>
+<li>Federico, Chris. "The Complete 2600 Easter Egg Archive". Orphaned Computers & Game Systems. Retrieved 2007-12-28.&nbsp<a href="#">[dead link]</a></li>
+        </ul>
+      <h3>External links&nbsp <span style="font-size:12px;">[</span>&nbsp<a href="#" style="font-size:12px;">edit</a>&nbsp<span style="font-size:12px;">]</span></h3>
+      <hr>
+      <div id="vizszintes-vonal"></div>
+<ul>
+    <li><a href="#">Communist Mutants from Space</a> at<a href="#"> AtariAge</a></li>
+    <li><a href="#">Communist Mutant from Space</a> at <a href="#">GameFAQs</a></li>
+</ul>
+<div id="tablazat2"><a href="#">Categories</a>:
+<a href="#">1982 video games <a href="#">Atari 2600 games</a> <a href="#">Cold War video games</a> <a href="#">Fixed shooters</a> <a href="#">North America-exclusive video games</a> <a href="#">Starpath games</a></div>
+    </div>
+   </div>
+    <div id="letolo"></div>
+    <div id="menu">
+       <a href="#"><img id="wiki-logo" src="https://en.wikipedia.org/static/images/project-logos/enwiki.png"></a>
+    <ul>
+  <a href="#"> Main page</a>
+   <br>
+ <a href="#"> Contents</a>
+ <br>
+  <a href="#">Featured content</a>
+  <br>
+ <a href="#">Current events</a>
+      <br>
+ <a href="#">Random article</a>
+      <br>
+ <a href="#">Donate to Wikipedia</a>
+ <a href="#">Wikipedia store</a>
+   <hr class="rovid-vonal">
+    </ul>
+    <ul>
+      Interaction
+      <br>
+  <a href="#" >Help</a>
+      <br>
+  <a href="#">About Wikipedia</a>
+  <a href="#">Community portal</a>
+      <br>
+   <a href="#"> Recent changes</a>
+      <br>
+    <a href="#">Contact page</a>
+      <hr class="rovid-vonal">
+      </ul>
+    <ul>
+   Tools
+      <br>
+    <a href="#">What links here</a>
+      <br>
+    <a href="#">Related changes</a>
+      <br>
+    <a href="#">Upload file</a>
+      <br>
+    <a href="#">Special pages</a>
+      <br>
+    <a href="#">Permanent link</a>
+      <br>
+    <a href="#">Page information</a>
+    <a href="#">Wikidata item</a> 
+    <br>
+    <a href="#">Cite this page</a>
+    </ul>    
+      <ul>
+    <hr class="rovid-vonal">
+Print/export
+      <br>
+     <a href="#"> Create a book</a>
+    <br>
+      <a href="#">Download as PDF</a>
+      <a href="#">Printable version</a>
+</ul>
+    <ul>
+      <hr class="rovid-vonal">
+      <div id="Languages" stlye="display:inline;" >Languages</div>
+      <a href="#">Español</a>
+      </ul>
+  </div>
+  <br></br>
+  <br></br>
+  <div id="also-szoveg">
+    This page was last modified on 10 June 2016, at 19:17.<p>
+    </p>Text is available under the <a href="#">Creative Commons Attribution-ShareAlike License</a>; additional terms may apply. By using this site, you agree to <br> the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="#">Wikimedia Foundation, Inc.</a>, a non-profit organization.
+    <br>
+    <br>
+    <a href="#">Privacy policy</a>
+     <a href="#">About Wikipedia</a>
+     <a href="#">Disclaimers</a>
+     <a href="#">Contact Wikipedia</a>
+     <a href="#">Developers</a>
+     <a href="#">Cookie statement</a>
+     <a href="#">Mobile view</a>
+<br>
+   </div>
+    </div>
+  </div>
+ </div>
+</body>
+</html>
